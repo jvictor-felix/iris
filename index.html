@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♡</title>
+    <script src="js.js" defer></script>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        main{
+            height: 100dvh !important;
+            background-image: url(img/love-2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        main p{
+            position: fixed;
+            margin: 80% auto 0 auto;
+            display: none;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        #tela-1{
+            background-color: transparent;
+        }
+        
+        #tela-2{
+            background-color: transparent;
+        }
+        
+        #tela-3{
+            background-color: transparent;
+        }
+        
+        #tela-4{
+            background-color: transparent;
+        }
+
+        footer{
+            width: calc(100% - 180px);
+            height: 50px;
+            background-color: transparent;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 90px;
+            padding-right: 90px;
+        }
+        button{
+            background-color: transparent;
+            border: 0;
+        }
+        button img{
+            width: 40px;
+            height: 40px;
+        }
+
+        #voltar img{
+            transform: rotate(90deg);
+        }
+        #passar img{
+            transform: rotate(270deg);
+        }
+        #tela-atual{
+            width: 50px;
+            height: 20px;
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #tela-atual div{
+            width: 7px;
+            height: 7px;
+            border-radius: 50px;
+        }
+
+        .tela-ativada{
+            display: block;
+        }
+
+        .ativado{
+            background-color: red;
+        }
+        .desativado{
+            background-color: whitesmoke;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <p class="tela-ativada">De todas as flores do mundo, <br> você é a mais bela.</p>
+        <p>Seu cheiro, <br>
+           seu toque, <br>
+           seu beijo, <br>
+           são como tatuagens na minha memória.            
+
+        
+        </p>
+        <p>
+        </p>
+        <p>E assim como a lua ilumina a noite, <br>
+            e o sol ilumina o dia, <br>
+            quero que você ilumine todos os meus dias.
+            <br>
+            <br>
+            <br>
+            Ass. João Victor
+        </p>
+    </main>
+    <footer>
+        <button id="voltar">
+            <img src="img/png-coracao.png">
+        </button>
+        <div id="tela-atual">
+            <div class="ativado"></div>
+            <div class="desativado"></div>
+            <div class="desativado"></div>
+            <div class="desativado"></div>
+        </div>
+        <button id="passar">
+            <img src="img/png-coracao.png">
+        </button>
+    </footer>
+    
+</body>
+</html>
